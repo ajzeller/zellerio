@@ -1,0 +1,9 @@
+<div class="container--projects-navbar">
+    <ul class="projects-list">
+        {% for item in site.data.projects.projects %}
+            <li class="">
+                <a href="{{ item.details_url}}">{{item.name}}</a> <span class="dot">&middot;</span>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

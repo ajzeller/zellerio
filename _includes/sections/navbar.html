@@ -1,0 +1,131 @@
+<header class="cd-morph-dropdown" id="nav">
+	<div class="container header-container">
+		<a class="navbar-brand nav-brand" href="{{ site.url }}">
+        <img src="{{ site.url }}/assets/icons/z-logo.svg" class="image--brand"/>
+        <div class="text--brand">
+            <span class="regular"></span><span class="regular"></span>
+        </div>
+    </a>
+		<!-- <a href="#" class="nav-brand">WalletBurst<span aria-hidden="true"></span></a> -->
+		<a href="#0" class="nav-trigger"><img src="{{ site.url }}/assets/icons/z-logo.svg" class="image--brand"/><span aria-hidden="true"></span></a>
+
+		<nav class="main-nav">
+			<ul>
+				<li class=" button" data-content="contact">
+					<a href="{{ site.url }}/contact">Contact
+						<!-- <i class="fas fa-chevron-down"></i> -->
+					</a>
+				</li>
+
+				<li class="button" data-content="photo">
+					<a href="{{ site.url }}/photo">Photography
+						<!-- <i class="fas fa-chevron-down"></i> -->
+					</a>
+				</li>
+
+				<li class=" links" data-content="about">
+					<a href="{{ site.url }}/about">About
+						<!-- <i class="fas fa-chevron-down"></i> -->
+					</a>
+				</li>
+
+				<li class="has-dropdown gallery" data-content="projects">
+					<a href="{{ site.url }}">Projects
+						<!-- <i class="fas fa-chevron-down"></i> -->
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="morph-dropdown-wrapper">
+			<div class="dropdown-list">
+				<ul>
+
+					<li id="about" class="dropdown gallery">
+						<a href="{{ site.url }}/about" class="label">About</a>
+						<div class="content">
+							<ul>
+
+								{% for item in site.data.menu_items.About %}
+								<li>
+									<a href="{{ site.url }}/{{item.path}}/">
+										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
+										<em>{{item.name}}</em>
+										<span>{{item.description}}</span>
+									</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</li>
+
+					<li id="photo" class="dropdown gallery">
+						<a href="{{ site.url }}/photo" class="label">Photography</a>
+
+						<div class="content">
+							<ul>
+
+								{% for item in site.data.menu_items.photo %}
+								<li>
+									<a href="{{ site.url }}/{{item.path}}/">
+										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
+										<em>{{item.name}}</em>
+										<span>{{item.description}}</span>
+									</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</li>
+
+					<li id="contact" class="dropdown gallery">
+							<a href="{{ site.url }}/contact" class="label">Contact</a>
+	
+							<div class="content">
+								<ul>
+	
+									{% for item in site.data.menu_items.contact %}
+									<li>
+										<a href="{{ site.url }}/{{item.path}}/">
+											<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
+											<em>{{item.name}}</em>
+											<span>{{item.description}}</span>
+										</a>
+									</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</li>
+
+					<li id="projects" class="dropdown gallery">
+						<hr class="hr-light">
+						<a href="{{ site.url }}" class="label">Projects</a>
+
+						<div class="content">
+							<ul>
+
+								{% for item in site.data.menu_items.Projects %}
+								<li>
+									<a href="{{ site.url }}/{{item.path}}/">
+										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
+										<em>{{item.name}}</em>
+										<span>{{item.description}}</span>
+									</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</li>
+
+					<li id="social" class="dropdown gallery">
+						<hr class="hr-light">
+							{% include components/social-links.html %}
+						</div>
+					</li>
+				</ul>
+
+				<div class="bg-layer" aria-hidden="true"></div>
+			</div> <!-- dropdown-list -->
+		</div> <!-- morph-dropdown-wrapper -->
+	</div>
+</header>

@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="container--photoreel">
+        {% for item in site.data.photos.photos %}
+             <img src="{{ site.url }}/assets/images/{{item.image-file}}" class="gallery-image animate2"> 
+        {% endfor %}
+        
+    </div>
+    
+    <div class="photography-info">
+            <p>
+                I shoot with a Canon EOS M3. My go-to lens is the Canon EF-M 22mm prime, and I do post-processing in Adobe Lightroom. I'd love to capture your next event - contact me <a href="{{site.url}}/contact">here</a>.
+            </p>
+    </div>
+</div>

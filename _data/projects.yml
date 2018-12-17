@@ -1,0 +1,41 @@
+projects:
+  - name: MyTop50 Spotify Tracks & Artists
+    live_url: https://mytop50.com  
+    details_url: mytop50
+    image: mytop50-landing.jpg
+    image-small: mytop50-landing-small.jpg
+    color: mytop50-black
+    btn_primary: View Live
+    btn_scondary: Details
+  - name: Personal Finance App Design
+    live_url: https://www.behance.net/gallery/63322443/Green-Personal-Finance-App-Design  
+    details_url: greenapp
+    image: green_app.jpg
+    image-small: green_app-small.jpg
+    color: green-app
+    btn_primary: View On Behance
+    btn_scondary: Details
+  - name: Wearable IOT Text Recognition Platform
+    live_url: https://ajzeller.github.io/vocal_focals_web/
+    details_url: vocalfocals 
+    image: vocalfocals.jpg
+    image-small: vocalfocals-small.jpg
+    color: vocal-focals
+    btn_primary: View Live 
+    btn_scondary: Details
+  - name: VR Campus Tour Site
+    live_url: https://ajzeller.github.io/visualizeua/
+    details_url: visualizeua
+    image: visualizeua.jpg
+    image-small: visualizeua-small.jpg
+    color: visualize-ua
+    btn_primary: View Live
+    btn_scondary: Details
+  - name: 
+    live_url: 
+    details_url:
+    image:
+    color:
+    btn_primary: 
+    btn_scondary:
+           

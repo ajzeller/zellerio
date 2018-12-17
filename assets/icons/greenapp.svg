@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-zellerio</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="AvenirNext-Medium, Avenir Next" font-size="60" font-weight="400" fill="#FFFFFF">
+            <tspan x="32.15" y="69">$</tspan>
+        </text>
+        <filter x="-19.4%" y="-6.1%" width="138.9%" height="117.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.568558673   0 0 0 0 0.568558673   0 0 0 0 0.568558673  0 0 0 0.748131793 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="logo-zellerio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-6-+-Path-7-+-$-+-Path-9-+-Path-8-+-$-Mask">
+            <rect id="Rectangle" fill="#00C375" x="0" y="0" width="100" height="100"></rect>
+            <path d="M58.2000008,38.7999992 L88.5,67 L111.5,90.5 C102.255485,100.990872 93.4554845,103.957539 85.0999985,99.4000015 C76.7445124,94.8424637 62.2111796,81.3757965 41.5,59 L44,57 L46,61 L54,61 L56,56 L56,51 L48,48 L58.2000008,38.7999992 Z" id="Path-8"></path>
+            <g id="$" fill="#FFFFFF" fill-opacity="1">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

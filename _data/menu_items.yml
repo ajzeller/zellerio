@@ -1,0 +1,28 @@
+Projects:
+  - name: MyTop50
+    path: mytop50
+    icon: mytop50.svg
+    description: Your top 50 Spotify tracks and artists over time.
+  - name: Green App
+    path: greenapp
+    icon: greenapp.svg
+    description: Personal Finance App Design
+  - name: VocalFocals
+    path: vocalfocals
+    icon: vocalfocals.svg
+    description: Wearable IOT Text Recognition Platform
+  - name: VisualizeUA
+    path: visualizeua
+    icon: visualizeua.svg
+    description: Virtual Reality Campus Lab Tour Site
+Photography:
+ 
+
+Contact:
+
+
+Tools:
+
+
+About:
+

@@ -1,0 +1,15 @@
+@mixin tag_color($color) {
+  border:  1px solid $color;
+  color: $color;
+
+  &:hover {
+    color: $color;
+    opacity: 0.7;
+  }
+}
+
+.tag--lifestyle { @include tag_color($blue-theme)}
+.tag--travel { @include tag_color($purple-theme)}
+.tag--phones { @include tag_color($red-theme)}
+.tag--reviews { @include tag_color($blue-grey-200)}
+.tag--investing { @include tag_color($green-theme)}

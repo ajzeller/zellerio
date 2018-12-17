@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include sections/head.html %}
+
+  <body>
+
+    {% include sections/navbar.html %}
+
+    <div class=" container--main container--no-padding">
+      {{ content }}
+    </div>
+
+    {% include sections/footer.html %}
+    {% include sources/source_scripts.html %}
+  </body>
+</html>
