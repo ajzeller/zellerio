@@ -163,19 +163,57 @@ pre {
   .container--masthead-body {
     // position: relative;
     // top: -75px;
+    // width: 500px;
     min-height: calc(100vh - 120px);
+    // width: 500px;
+
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "profile-image"
+                         "intro-header"
+                         "tag-frontend"
+                         "tag-mechanical"                           
+                         "tag-uidesigner"
+                         "tag-day"
+                         "tag-night"
+                         "scroll-prompt";
+
+    .cell-frontend {
+      grid-area: tag-frontend;
+    }
+
+    .cell-mechanical {
+      grid-area: tag-mechanical;
+    }
+
+    .cell-uidesigner {
+      grid-area: tag-uidesigner;
+    }
+
+    .cell-day {
+      grid-area: tag-day;
+    }
+
+    .cell-night {
+      grid-area: tag-night;
+    }
+
+    .cell-projects-list {
+      grid-area: cell-projects-list;
+    }
   }
 
   .masthead--image {
     max-width: 200px;
     width: 150px;
     margin: 0 auto 20px;
+    grid-area: profile-image;
   }
 
   h2 {
     font-size: 4.5rem;
     margin: 0 0 15px 0;
+    grid-area: intro-header;
   }
 
   h3 {
@@ -199,9 +237,10 @@ pre {
     display: block;
     font-size: 1.6rem;
     font-weight: 300;
-    padding: 0.5rem 1.3rem;
-    margin: 1.5rem 0 0.5rem 0;
+    padding: 0.5rem 0rem;
+    margin: 10px auto 0.5rem auto;
     text-align: center;
+    vertical-align: middle;
 
     &:first-of-type {
       margin: 2rem 0;
@@ -394,9 +433,11 @@ pre {
 .container--photoreel {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  margin: 1rem auto 0 auto;
-  min-height: 100ch;
+  grid-gap: 2vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 1000px;
+  padding: 2vw;
 
   .gallery-image {
     max-width: 100%;
@@ -412,21 +453,35 @@ pre {
 }
 
 .container--projects-navbar {
+  min-height: 200px;
+  text-transform: uppercase;
+  width: 400px;
+  // background-color: $white;
+  margin: 50px 25px 0 100px;
+  z-index: 1;
   display: none;
-  width: 80%;
-  color: $grey-text;
-  font-size: 1.4rem;
-  text-align: center;
+  // width: 100%;
+  color: $black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
   vertical-align: middle;
 
   .projects-list {
-    border-radius: 50px;
-    padding: 0.2rem 1rem;
-    background-color: $grey-tag;
+    padding: 1rem;
+    background-color: $white;
+    display: grid;
+    border: 1px solid $grey-border-light;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.05);
+
+    // background-color: $grey-tag;
 
 
     li {
-      display: inline;
+      justify-self: left;
+      // display: inline;
     }
   }
 
@@ -607,11 +662,12 @@ a.anchor {
   display: block;
   // position: absolute;
   // border: 2px solid #000;
-  width: 100vw;
+  // width: 100vw;
   height: 50px;
   border-radius: 100%;
   margin: 2rem 0 0 0;
   // background-color: $black;
+  grid-area: scroll-prompt;
 }
 
 #container--arrows{
@@ -953,7 +1009,87 @@ background-repeat: no-repeat;
 
 .container--projects-navbar {
     display: block;
+    // position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 50px;
   }
+
+  .container--masthead {
+    .container--masthead-body {
+      // max-width: 100v;
+      min-height: 0px;
+      margin: 0 10vw;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 80px repeat(3, 40px) repeat(3, 50px);
+      grid-auto-flow: row;
+      grid-template-areas: "profile-image intro-header"
+                           "profile-image tag-frontend"
+                           "profile-image tag-mechanical"
+                           "profile-image tag-uidesigner"
+                           ". tag-day"
+                           ". tag-night"
+                           "scroll-prompt scroll-prompt";
+
+                          //  "scroll-prompt scroll-prompt";
+
+        .scroll-prompt {
+          margin: 50px 0 0 0;
+          // display: none;
+        }
+
+        .masthead--image {
+          margin: 0 50px 0 0;
+          justify-self: right;
+          height: 200px;
+          width: 200px;
+        }
+
+        h2, .cell-frontend, .cell-mechanical, .cell-uidesigner, .cell-day, .cell-night {
+          justify-self: left;
+          align-self: center;
+          margin: 0 0 0 50px;
+        }
+
+        h2 {
+          margin-bottom: 0px;
+        }
+
+        .cell-projects-list {
+          justify-self: center;
+          align-self: center;
+        }
+    }
+
+    .container--masthead-upper {
+      height: 250px;
+
+      .masthead--upper--fill {
+        height: 325px;
+      }
+    }
+
+    // height: 500px;
+    min-height: 70vh;
+    
+  }
+
+  .container--project {
+
+    // max-width: 600px;
+    margin: 0 0 0 40vw;
+
+    
+    .project-image {
+      width: 400px;
+    }
+
+    a .btn-cta {
+      margin-bottom: 100px;
+      justify-self: right;
+    }
+  }
+
+
 }
 
 @media only screen and (min-width : 1200px) { 

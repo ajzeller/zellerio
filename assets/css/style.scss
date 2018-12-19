@@ -129,8 +129,8 @@ body {
 		  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
 		  &:hover {
-		    // transform: translateY(-2px);
-		    transform: rotate(90deg);
+		    transform: translateY(-2px);
+		    // transform: rotate(10deg);
 
 		    // transform: rotate(5deg);
 		  }
@@ -329,9 +329,18 @@ body {
 			line-height: 60px;
 			color: $black;
 			font-size: 1.5rem;
+			font-weight: 400;
 			@include font-smoothing;
 			transition: opacity .2s;
 			text-transform: uppercase;
+			transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+			&:hover {
+				transform: translateY(-2px);
+				// transform: rotate(10deg);
+	
+				// transform: rotate(5deg);
+			  }
 		}
 
 		&.is-dropdown-visible .main-nav > ul > li > a {
@@ -372,7 +381,7 @@ body {
 			will-change: transform, width, height;
 			transition: visibility .1s;
 			box-shadow: 0 3px 5px rgba(#000, .05);
-			border-top: 2px solid $green-theme;
+			border-top: 2px solid $grey-border;
 			border-left: 1px solid $grey-border-light;
 			border-right: 1px solid $grey-border-light;
 			border-bottom: 1px solid $grey-border-light;
@@ -393,7 +402,7 @@ body {
 				height: 0;
 				width: 0;
 				border: 8px solid transparent;
-				border-bottom-color: $green-theme;
+				border-bottom-color: $grey-border;
 				opacity: 0;
 				transition: opacity .3s;
 			}

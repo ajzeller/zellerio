@@ -6,16 +6,16 @@
   </div>
 
   <div class="container--masthead-body">
-    <img src="{{ site.url }}/assets/images/paris.png" class="masthead--image image--rounded image--intro" />
+    <img src="{{ site.url }}/assets/images/paris.png" class="masthead--image image--rounded image--intro animate2" />
     <h2><span class="regular">I'm </span> <span class="bold">Andrew Zeller.</span></h2>
-    <div class="masthead--tag skillset"> <div class="tag-job">Frontend Developer</div> </div>
-    <div class="masthead--tag skillset"> <div class="tag-job">Mechanical Engineer</div></div>
-    <div class="masthead--tag skillset"> <div class="tag-job">UI Designer</div></div>
+    <div class="masthead--tag skillset cell-frontend"> <div class="tag-frontend">Frontend Developer</div> </div>
+    <div class="masthead--tag skillset cell-mechanical"> <div class="tag-mechanical">Mechanical Engineer</div></div>
+    <div class="masthead--tag skillset cell-uidesigner"> <div class="tag-uidesigner">UI Designer</div></div>
 
-    <div class="masthead--description"><span class="day"> ☀️ I design robots at Fetch Robotics</span></div>
-    <div class="masthead--description"><span class="night">🌙 I build useful things on the internet</span></div>
-
-    {% include components/projects-navbar.html %}
+    <div class="masthead--description cell-day"><span class="day"> ☀️ I design robots at Fetch Robotics</span></div>
+    <div class="masthead--description cell-night"><span class="night">🌙 I build useful things on the internet</span></div>
+    <div class="cell-projects-list">
+    </div>
   
     <div class="scroll-prompt">
         <div id="container--arrows">
@@ -26,4 +26,7 @@
   
   </div>
 </div>
+
+{% include components/projects-navbar.html %}
+
 
