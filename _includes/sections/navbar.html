@@ -11,27 +11,23 @@
 
 		<nav class="main-nav">
 			<ul>
-				<li class=" button" data-content="contact">
+				<!-- <li class=" button" data-content="contact">
 					<a href="{{ site.url }}/contact">Contact
-						<!-- <i class="fas fa-chevron-down"></i> -->
 					</a>
-				</li>
+				</li> -->
 
 				<li class="button" data-content="photo">
 					<a href="{{ site.url }}/photo">Photography
-						<!-- <i class="fas fa-chevron-down"></i> -->
 					</a>
 				</li>
 
-				<li class=" links" data-content="about">
+				<!-- <li class=" links" data-content="about">
 					<a href="{{ site.url }}/about">About
-						<!-- <i class="fas fa-chevron-down"></i> -->
 					</a>
-				</li>
+				</li> -->
 
 				<li class="has-dropdown gallery" data-content="projects">
 					<a href="{{ site.url }}">Projects
-						<!-- <i class="fas fa-chevron-down"></i> -->
 					</a>
 				</li>
 			</ul>
@@ -41,14 +37,14 @@
 			<div class="dropdown-list">
 				<ul>
 
-					<li id="about" class="dropdown gallery">
+					<!-- <li id="about" class="dropdown gallery">
 						<a href="{{ site.url }}/about" class="label">About</a>
 						<div class="content">
 							<ul>
 
 								{% for item in site.data.menu_items.About %}
 								<li>
-									<a href="{{ site.url }}/{{item.path}}/">
+									<a href="#{{item.path}}/">
 										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
 										<em>{{item.name}}</em>
 										<span>{{item.description}}</span>
@@ -57,7 +53,7 @@
 								{% endfor %}
 							</ul>
 						</div>
-					</li>
+					</li> -->
 
 					<li id="photo" class="dropdown gallery">
 						<a href="{{ site.url }}/photo" class="label">Photography</a>
@@ -78,7 +74,7 @@
 						</div>
 					</li>
 
-					<li id="contact" class="dropdown gallery">
+					<!-- <li id="contact" class="dropdown gallery">
 							<a href="{{ site.url }}/contact" class="label">Contact</a>
 	
 							<div class="content">
@@ -95,7 +91,7 @@
 									{% endfor %}
 								</ul>
 							</div>
-						</li>
+						</li> -->
 
 					<li id="projects" class="dropdown gallery">
 						<hr class="hr-light">
@@ -106,7 +102,7 @@
 
 								{% for item in site.data.menu_items.Projects %}
 								<li>
-									<a href="{{ site.url }}/{{item.path}}/">
+									<a href="#{{item.path}}">
 										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
 										<em>{{item.name}}</em>
 										<span>{{item.description}}</span>

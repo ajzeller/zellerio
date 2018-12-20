@@ -31,11 +31,11 @@ projects:
     color: visualize-ua
     btn_primary: View Live
     btn_scondary: Details
-  - name: 
-    live_url: 
-    details_url:
-    image:
-    color:
-    btn_primary: 
-    btn_scondary:
+  # - name: 
+  #   live_url: 
+  #   details_url:
+  #   image:
+  #   color:
+  #   btn_primary: 
+  #   btn_scondary:
            
