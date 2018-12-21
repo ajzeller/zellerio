@@ -362,6 +362,8 @@ pre {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
 
   .about-photo {
     width: 150px;
@@ -380,6 +382,19 @@ pre {
       font-weight: 500;
       margin: 10px 0 20px 0;
     }
+
+    a {
+      color: $black;
+      text-decoration-color: $grey-border-light;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+      &:hover {
+        background-color: $grey-border-light;
+      }
+    }
   }
 }
 
@@ -397,6 +412,8 @@ pre {
   padding: 10px;
   justify-content: center;
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+
 
 
   .form-input {
