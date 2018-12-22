@@ -1,0 +1,35 @@
+
+<div class='project-header'>
+    <div class="header-upper">
+        <div class="header-upper-fill"></div>
+    </div>
+
+    <div class="project-header-title" style="background-color: var(--{{page.color}});">
+        {{ page.project_title }} <i class="material-icons open-new">open_in_new</i>
+    </div>
+
+    <a href="{{site.url}}/#{{page.id}}" class="btn-projects-return">
+            <div class="btn-cta btn-cta-primary">
+                <span><i class="material-icons">arrow_back</i>Projects</span> 
+            </div>
+        </a>
+
+    <a href="{{page.source_url}}" class="btn-live" target="_blank">
+        <div class="btn-cta btn-cta-primary" style="color: var(--{{page.color}}); border: 0px solid var(--{{page.color}})">
+            <span>{{page.source_type}} 
+                <i class="fab fa-{{page.source_icon}}"></i>
+                <!-- <i class="material-icons">open_in_new</i> -->
+            </span> 
+        </div>
+    </a>
+
+    <a href="{{page.live_url}}" class="details--project-image" target="_blank">
+            <img src="{{ site.url }}/assets/images/{{page.image_primary}}" class="project-image animate1" alt="">
+            <!-- <img src="{{ site.url }}/assets/images/{{item.image-small}}" class="project-image">  -->
+
+    </a>
+
+    
+
+
+</div>

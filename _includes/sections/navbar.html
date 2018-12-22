@@ -94,15 +94,16 @@
 						</li> -->
 
 					<li id="projects" class="dropdown gallery">
-						<hr class="hr-light">
-						<a href="{{ site.url }}" class="label">Projects</a>
+						<i class="material-icons" id="icon-divider">remove</i>
+
+						<a href="#" class="label">Projects</a>
 
 						<div class="content">
 							<ul>
 
 								{% for item in site.data.menu_items.Projects %}
 								<li>
-									<a href="#{{item.path}}">
+									<a href="{{site.url}}/#{{item.path}}">
 										<img src="{{ site.url }}/assets/icons/{{item.icon}}" class="menu-item-icon" />
 										<em>{{item.name}}</em>
 										<span>{{item.description}}</span>
@@ -112,9 +113,12 @@
 							</ul>
 						</div>
 					</li>
+					
+					<i class="material-icons" id="icon-divider">remove</i>
+
 
 					<li id="social" class="dropdown gallery">
-						<hr class="hr-light">
+
 							{% include components/social-links.html %}
 						</div>
 					</li>

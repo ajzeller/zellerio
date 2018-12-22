@@ -2,7 +2,23 @@
 layout: default
 title: Andrew Zeller | mytop50
 permalink: /mytop50
+project_title: mytop50
 id: "mytop50"
+color: mytop50-black
+live_url: https://mytop50.com
+image_primary: mytop50-landing.jpg
+source_type: Github
+source_icon: github
+source_url: https://github.com/ajzeller/spotify-top-tunes
 ---
 
-{{ page.id }}
+
+{% include components/project-header.html %}
+
+<div class="container--built-with">
+    <h3>Built with:</h3>
+    {% include components/tags/express.html %}
+    {% include components/tags/handlebars.html %}
+    {% include components/tags/sass.html %}
+    {% include components/tags/spotify.html %}
+</div>
