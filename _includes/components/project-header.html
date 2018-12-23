@@ -4,9 +4,11 @@
         <div class="header-upper-fill"></div>
     </div>
 
-    <div class="project-header-title" style="background-color: var(--{{page.color}});">
-        {{ page.project_title }} <i class="material-icons open-new">open_in_new</i>
-    </div>
+    <a href="{{page.live_url}}" class="project-header-title" style="background-color: var(--{{page.color}});" target="_blank">
+        {{ page.project_title }} <i class="material-icons open-new">open_in_new</i>    
+    </a>
+    <!-- <div class="project-header-title" style="background-color: var(--{{page.color}});"> -->
+    <!-- </div> -->
 
     <a href="{{site.url}}/#{{page.id}}" class="btn-projects-return">
             <div class="btn-cta btn-cta-primary">
