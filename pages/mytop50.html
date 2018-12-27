@@ -6,7 +6,10 @@ project_title: mytop50
 id: "mytop50"
 color: mytop50-black
 live_url: https://mytop50.com
-image_primary: mytop50-landing.jpg
+image_1: mytop50-landing.jpg
+image_2: mytop50-login.jpg
+image_3: mytop50-scroll.jpg
+image_4: mytop50-desktop.jpg
 source_type: Github
 source_icon: github
 source_url: https://github.com/ajzeller/spotify-top-tunes
@@ -15,10 +18,81 @@ source_url: https://github.com/ajzeller/spotify-top-tunes
 
 {% include components/project-header.html %}
 
-<div class="container--built-with">
-    <h3>Built with:</h3>
-    {% include components/tags/express.html %}
-    {% include components/tags/handlebars.html %}
-    {% include components/tags/sass.html %}
-    {% include components/tags/spotify.html %}
+<p class="project-intro">Mobile-first web app that allows users to view their recent and top 50 artists and tracks over 
+    time and add these charts to their library as a playlist. Used by 800+ Spotify listeners in 55 countries to discover the soundtracks to their lives.
+</p>
+
+{% include components/project-details.html %}
+
+
+<div class="container--project-text">
+    <div class="project-text-body">
+
+        <div class="container--built-with">
+            <h3>Built with:</h3>
+            {% include components/tags/express.html %}
+            {% include components/tags/handlebars.html %}
+            {% include components/tags/sass.html %}
+            {% include components/tags/spotify.html %}
+            {% include components/tags/sketch.html %}
+        </div>
+
+        <h3>Background</h3>
+
+            <p>
+                Music is a huge part of my life, and after seeing Spotify's <span class="italic">2017 Wrapped</span> yearly listening recap, 
+                I  wanted to go deeper into my most played music over the history of my Spotify listening, but there was no way to view this data.
+                Scratching my own itch, I dug into the Spotify web API and learned a bit of NodeJS to build <a href="https://mytop50.com" target="_blank">mytop50.com</a>. 
+            </p>
+        
+                <!-- <i class="material-icons" id="icon-divider">remove</i> -->
+        
+        <h3>Process</h3>
+        <h4>Design</h4>
+   
+            <p>
+                The project began with a rough UI mockup in Sketch to capture the design intent and the overall app concept. 
+                I knew that since most users would be viewing the site on a mobile screen, I needed to make mobile-first design
+                a priority from the beginning. 
+                
+                <i class="material-icons" id="icon-divider">remove</i>
+
+                I'm a big fan of Spotify's design system and wanted to maintain consistency with their UI so that MyTop50 felt like a familiar
+                extension of the native Spotify app. This informed the layout and choice of colors, with white text on a dark background providing a beautiful and 
+                utilitarian contrast. Spotify's signature green was used for call-to-action buttons and to show the active filter buttons.
+                For typeface, I chose <span class="italic bold">IBM Plex Sans</span>, a personal favorite that I find to be crisp and balanced, similar to <span class="italic regular">Proxima Nova</span>
+                used in the Spotify UI but with a bit of it own sharper character. 
+            </p>    
+
+                
+        <h4>Development</h4>
+            <p>
+                I then dug into the Spotify Web API to understand the authentication steps and API requests needed to pull a user's top artists and tracks. 
+                After browsing the code for a few sample authentication apps, I found that building on NodeJS with ExpressJS would be a solid approach to start.
+                Although I would have loved to show more listening data, Spotify only provides up to the top 50 artists and tracks over three different time intervals, 
+                1 month, 6 months, and all time. 
+                Spotify's API also provides recently played tracks in chronological order, so I added that as a feature as I will frequently forget to save a song that I liked and then
+                had no way to find what I listened to an hour ago.
+
+                <i class="material-icons" id="icon-divider">remove</i>
+
+                User feedback led me to add an <span class="italic regular">Add Top xx to Playlist</span> button which 
+                allows users to trim their top tracks over the selected time period from top 50 to top 5 and add these as a playlist
+                to their library.
+            </p>
+
+        <h4>Deployment</h4>
+
+                <p> 
+                    For the sake of simplicity, I deployed the app on Heroku which will build off of git pushes and automatically handles all SSL certs.
+                </p>
+
+            <!-- <i class="material-icons" id="icon-divider">remove</i> -->
+
+        <h3>Outcome</h3>
+            <p>
+                Music is a universal language that transends borders, races, and cultures, and an individual's Top50 is a unique expression of themself at a given time. After my friends and I loved using the app, I wanted to 
+                share it with the world. Over 800 Spotify users from 55+ countries have used MyTop50.
+            </p>
+    </div>
 </div>
