@@ -1313,7 +1313,18 @@ background-repeat: no-repeat;
   color: $grey-text;
   // min-height: 20vh;
   // border-top: 1px solid $grey-border-light;
+
+  .return-top {
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+
+    a:hover {
+      color: $black;
+    }
+  }
 }
+
+
 
 .footer-icons {
   list-style-type: none;

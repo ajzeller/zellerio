@@ -2,11 +2,14 @@
 layout: default
 title: Andrew Zeller | Green App
 permalink: /greenapp
-id: "greenapp"
 project_title: personal finance app
+id: "greenapp"
 color: green-app
 live_url: https://www.behance.net/gallery/63322443/Green-Personal-Finance-App-Design
-image_primary: green_app.jpg
+image_1: green_app_1.jpg
+image_2: green_app_2.jpg
+image_3: green_app_3.jpg
+image_4: green_app_4.jpg
 source_type: Behance
 source_icon: behance-square
 source_url: https://www.behance.net/gallery/63322443/Green-Personal-Finance-App-Design
@@ -16,8 +19,18 @@ source_url: https://www.behance.net/gallery/63322443/Green-Personal-Finance-App-
 
 {% include components/project-header.html %}
 
-<div class="container--built-with">
-    <h3>Built with:</h3>
-    {% include components/tags/sketch.html %}
+<p class="project-intro">Mobile app design concept inspired by the <span class="italic regular">Mint</span> personal finance app made by Intuit.
+</p>
+    
+{% include components/project-details.html %}
 
+<div class="container--project-text">
+    <div class="project-text-body">
+        <div class="container--built-with">
+            <h3>Built with:</h3>
+            {% include components/tags/sketch.html %}
+        </div>    
+
+
+    </div>   
 </div>

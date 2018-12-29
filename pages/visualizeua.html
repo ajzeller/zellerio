@@ -6,7 +6,10 @@ project_title: VR Campus Tour Site
 id: "visualizeua"
 color: visualize-ua
 live_url: https://ajzeller.github.io/visualizeua/
-image_primary: visualizeua.jpg
+image_1: visualizeua.jpg
+image_2:
+image_3:
+image_4:
 source_type: Github
 source_icon: github
 source_url: https://github.com/ajzeller/visualizeua
@@ -15,8 +18,18 @@ source_url: https://github.com/ajzeller/visualizeua
 
 {% include components/project-header.html %}
 
-<div class="container--built-with">
-    <h3>Built with:</h3>
-    {% include components/tags/jekyll.html %}
-    {% include components/tags/sass.html %}
+<p class="project-intro">Mobile-first web app that allows users to view their recent and top 50 artists and tracks over 
+        time and add these charts to their library as a playlist. Used by 800+ Spotify listeners in 55 countries to discover the soundtracks to their lives.
+</p>
+
+{% include components/project-details.html %}
+
+<div class="container--project-text">
+    <div class="container--text-body">
+        <div class="container--built-with">
+            <h3>Built with:</h3>
+            {% include components/tags/jekyll.html %}
+            {% include components/tags/sass.html %}
+        </div>
+    </div>
 </div>
