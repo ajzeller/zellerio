@@ -1,17 +1,36 @@
 photos:
   - image-file: yi_peng_boat.jpg
-  - image-file: bangkok_sunset.jpg
+    image-file-large: yi_peng_boat_large.jpg
+  - image-file: bangkok_skyline_day.jpg
+    image-file-large: bangkok_skyline_day_large.jpg
   - image-file: motorbike_alley.jpg
+    image-file-large: motorbike_alley_large.jpg
   - image-file: flame_tight.jpg
+    image-file-large: flame_tight_large.jpg
+  - image-file: lightbulb.jpg 
+    image-file-large: lightbulb_large.jpg
   - image-file: doi_suthep_1.jpg
+    image-file-large: doi_suthep_1_large.jpg
   - image-file: pork_balls_tight.jpg
+    image-file-large: pork_balls_tight_large.jpg
   - image-file: bangkok_skyline.jpg
+    image-file-large: bangkok_skyline_large.jpg
   - image-file: not_tacos_tight.jpg
+    image-file-large: not_tacos_tight_large.jpg
   - image-file: lantern_bottom.jpg
+    image-file-large: lantern_bottom_large.jpg
   - image-file: colorful_tile.jpg
+    image-file-large: colorful_tile_large.jpg
   - image-file: pork_balls_wide.jpg
+    image-file-large: pork_balls_wide_large.jpg
   - image-file: lantern_wide.jpg
+    image-file-large: lantern_wide_large.jpg
+  - image-file: bangkok_sunset.jpg
+    image-file-large: bangkok_sunset_large.jpg
   - image-file: pad_thai_tight.jpg
+    image-file-large: pad_thai_tight_large.jpg
   - image-file: street_blur.jpg
+    image-file-large: street_blur_large.jpg
   - image-file: tarn.jpg
+    image-file-large: tarn_large.jpg
   

@@ -819,6 +819,7 @@ pre {
 
 .photography-info {
   margin: 1rem;
+  max-width: 1000px;
 }
 
 .container--projects-navbar {
@@ -1583,7 +1584,10 @@ background-repeat: no-repeat;
     }
   }
 
-
+  .photography-info {
+    margin: 1rem auto;
+    padding: 0 2rem;
+  }
 
 }
 

@@ -2,7 +2,9 @@
 <div class="">
     <div class="container--photoreel">
         {% for item in site.data.photos.photos %}
-             <img src="{{ site.url }}/assets/images/{{item.image-file}}" class="gallery-image animate2"> 
+             <a href="{{ site.url }}/assets/images/{{item.image-file-large}}" class="gallery-image">
+                 <img src="{{ site.url }}/assets/images/{{item.image-file}}" class="gallery-image animate2"> 
+             </a>
         {% endfor %}
         
     </div>
