@@ -1,5 +1,28 @@
 <div class="projects">
-    {% for item in site.data.projects.projects %}
+    {% for item in site.data.projects.hardware_projects %}
+        <div class="container--project" id="{{item.details_url}}">
+            <div class="masthead--tag project-title">{{ item.name }}</div>
+            <!-- <a href="{{item.live_url}}" class="container--project-image img-lazyload project-image animate1" 
+                style="background-color: var(--{{item.color}}); 
+                background-image: url({{ site.url }}/assets/images/{{item.image-small}});"
+                data-image-full="{{ site.url }}/assets/images/{{item.image}}"> -->
+            <a href="{{ site.url }}/{{item.details_url}}" class="container--project-image">
+                <img src="{{ site.url }}/assets/images/{{item.image}}" class="project-image animate1" alt="">
+                <!-- <img src="{{ site.url }}/assets/images/{{item.image-small}}" class="project-image">  -->
+
+            </a>
+            
+
+            <a href="{{item.live_url}}" class="btn-live" target="_blank">
+                <div class="masthead--tag btn-cta btn-cta-primary animate2" style="background-color: var(--{{item.color}});">
+                    <span>View Site <i class="material-icons">open_in_new</i></span> 
+                </div>
+            </a>
+            <a href="{{ site.url }}/{{item.details_url}}" class="btn-details"><div class="masthead--tag btn-cta btn-cta-secondary animate2" style="color: var(--{{item.color}});">Details <i class="material-icons">arrow_forward</i> </div></a>
+        </div>
+    {% endfor %}
+
+    {% for item in site.data.projects.web_projects %}
         <div class="container--project" id="{{item.details_url}}">
             <div class="masthead--tag project-title">{{ item.name }}</div>
             <!-- <a href="{{item.live_url}}" class="container--project-image img-lazyload project-image animate1" 

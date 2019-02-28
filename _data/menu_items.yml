@@ -1,4 +1,20 @@
 Projects:
+  - name: VocalFocals
+    path: vocalfocals
+    icon: vocalfocals.svg
+    description: Wearable IOT Text Recognition Platform
+  - name: Alabama Astrobotics 
+    path: astrobotics
+    icon: astrobotics.svg
+    description: NASA Robotic Mining Competition
+  - name: Vacuum Gripper Design
+    path: gripper
+    icon: fetch-logo.svg
+    description: Internship Project at Fetch Robotics
+  - name: Open Source Portal
+    path: opensource
+    icon: fetch-logo.svg
+    description: Static site for Fetch Robotics Open Source Platform
   - name: MyTop50
     path: mytop50
     icon: mytop50.svg
@@ -7,10 +23,6 @@ Projects:
     path: greenapp
     icon: greenapp.svg
     description: Personal Finance App Design
-  - name: VocalFocals
-    path: vocalfocals
-    icon: vocalfocals.svg
-    description: Wearable IOT Text Recognition Platform
   - name: VisualizeUA
     path: visualizeua
     icon: visualizeua.svg

@@ -1,4 +1,38 @@
-projects:
+hardware_projects:
+  - name: Wearable IOT Text Recognition Platform
+    live_url: https://ajzeller.github.io/vocal_focals_web/
+    details_url: vocalfocals 
+    image: vocalfocals.jpg
+    image-small: vocalfocals-small.jpg
+    color: vocal-focals
+    btn_primary: View Live 
+    btn_scondary: Details
+  - name: NASA Robotic Mining Competition Team
+    live_url: http://www.alabamaastrobotics.com/
+    details_url: astrobotics
+    image: alabama-astrobotics.jpg
+    image-small: alabama-astrobotics.jpg
+    color: alabama-primary
+    btn_primary: View site
+    btn_scondary: Details
+  - name: Vacuum Gripper Design - Fetch Robotics
+    live_url: https://vimeo.com/140952616
+    details_url: gripper
+    image: fetch-gripper.jpg
+    image-small: fetch-gripper.jpg
+    color: fetch-primary
+    btn_primary: View Video
+    btn_scondary: Details
+
+web_projects:
+  - name: Fetch Robotics Open Source Portal
+    live_url: https://opensource.fetchrobotics.com
+    details_url: opensource
+    image: fetch-opensource.jpg
+    image-small: fetch-opensource.jpg
+    color: fetch-primary
+    btn_primary: View Live
+    btn_scondary: Details
   - name: MyTop50 Spotify Tracks & Artists
     live_url: https://mytop50.com  
     details_url: mytop50
@@ -14,14 +48,6 @@ projects:
     image-small: green_app-small.jpg
     color: green-app
     btn_primary: View On Behance
-    btn_scondary: Details
-  - name: Wearable IOT Text Recognition Platform
-    live_url: https://ajzeller.github.io/vocal_focals_web/
-    details_url: vocalfocals 
-    image: vocalfocals.jpg
-    image-small: vocalfocals-small.jpg
-    color: vocal-focals
-    btn_primary: View Live 
     btn_scondary: Details
   - name: VR Campus Tour Site
     live_url: https://ajzeller.github.io/visualizeua/

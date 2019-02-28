@@ -1,6 +1,17 @@
 <div class="container--projects-navbar animate-projects-navbar">
     <ul class="projects-list">
-        {% for item in site.data.projects.projects %}
+        <h3>Hardware <i class="fas fa-cogs"></i></h3>
+        {% for item in site.data.projects.hardware_projects %}
+            <li class="">
+                <a href="#{{ item.details_url}}">{{item.name}}</a> 
+                <!-- <span class="dot">&middot;</span> -->
+            </li>
+        {% endfor %}
+
+        <h3>Web <i class="fas fa-mobile-alt"></i></h3>
+
+
+        {% for item in site.data.projects.web_projects %}
             <li class="">
                 <a href="#{{ item.details_url}}">{{item.name}}</a> 
                 <!-- <span class="dot">&middot;</span> -->

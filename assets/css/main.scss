@@ -30,7 +30,10 @@ body {
   --vocal-focals: #{$vocal-focals};
   --green-app: #{$green-app};
   --visualize-ua: #{$visualize-ua};
+  --alabama-primary: #{$alabama-primary};
   --mytop50-black: #{$mytop50-black};
+  --fetch-primary: #{$fetch-primary};
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -173,9 +176,9 @@ pre {
     grid-template-columns: 1fr;
     grid-template-areas: "profile-image"
                          "intro-header"
-                         "tag-frontend"
+                        //  "tag-frontend"
                          "tag-mechanical"                           
-                         "tag-uidesigner"
+                        //  "tag-uidesigner"
                          "tag-day"
                          "tag-night"
                          "scroll-prompt";
@@ -862,6 +865,11 @@ pre {
         color: $black;
       }
     }
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 10px 0;
+    }
   }
 
 }
@@ -1411,12 +1419,12 @@ background-repeat: no-repeat;
       min-height: 0px;
       margin: 0 10vw;
       grid-template-columns: 2fr 3fr;
-      grid-template-rows: 80px repeat(3, 45px) repeat(3, 55px) 75px 100px;
+      grid-template-rows: 80px repeat(1, 45px) repeat(3, 55px) 75px 100px;
       grid-auto-flow: row;
       grid-template-areas: "profile-image intro-header"
-                           "profile-image tag-frontend"
+                          //  "profile-image tag-frontend"
                            "profile-image tag-mechanical"
-                           "profile-image tag-uidesigner"
+                          //  "profile-image tag-uidesigner"
                            ". tag-day"
                            ". tag-night"
                            "social-links social-links"
