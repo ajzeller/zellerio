@@ -1,4 +1,8 @@
 Projects:
+  - name: RollerTop Mobile Conveyor
+    path: rollertop
+    icon: fetch-logo.svg
+    description: From concept to production at Fetch Robotics
   - name: VocalFocals
     path: vocalfocals
     icon: vocalfocals.svg

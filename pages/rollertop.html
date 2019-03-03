@@ -1,0 +1,69 @@
+---
+layout: default
+title: Andrew Zeller | RollerTop Mobile Conveyor - Fetch Robotics
+permalink: /rollertop
+project_title: RollerTop Mobile Conveyor - Fetch Robotics
+id: "rollertop"
+color: fetch-primary
+live_url: https://fetchrobotics.com/products-technology/virtualconveyor/rollertop/
+image_1: rollertop100-2.jpg
+image_2: rollertop100-3.jpg
+image_3: rollertop100-4.jpg
+source_type: TechCrunch Article
+source_icon: 
+source_url: https://techcrunch.com/2018/04/05/fetch-adds-two-new-robots-to-its-warehouse-automation-army/
+
+---
+
+
+{% include components/project-header.html %}
+
+<p class="project-intro">
+        Hardware design for roller conveyor on autonomous mobile robot.
+</p>
+
+{% include components/project-details.html %}
+
+<div class="container--project-text">
+    <div class="project-text-body">
+        <div class="container--built-with">
+            <h3>Built with:</h3>
+            {% include components/tags/solidworks.html %}
+        </div>
+
+        <h3>Background</h3>
+
+        <p>
+            The RollerTop product began as my intern project at Fetch Robotics, where I made a proof-of-concept conveyor accessory for the Freight 100 robot base. There
+            was a lot of interest around a conveyor-type mechanism on a mobile robot because with only one degree-of-freedom, a conveyor mechanism is just about the 
+            simplest and cheapest active manipulator aside from Fetch's Cart Connect accessory. 
+            The initial design used a conveyor belt and drum roller that was driven by an external planetary gearmotor via a belt drive. The conveyor belt approach
+            introduced a lot of complexity as the belt had to be tensioned and the rollers tapered to prevent the belt from walking off to one side. The tensioning mechanism
+            required machined parts and spherical bearings to allow for misalignment of the shaft, and the overall structure was unnecessarily heavy.
+        </p>
+
+        <h3>Development</h3>
+
+        <p>
+            When I began full-time as a mechanical engineer at Fetch, I went back to the drawing board on the concept, completely redesigning the mechanism from the ground up. 
+            This design approach, which would eventually become the production accessory, used an industry-standard DC-powered motorized roller connected to slave rollers with Poly-V belts. 
+            The design saves a lot of cost compared to the initial conceot by using only 5052 Al sheet metal and no machined parts. Compared to using chain to transmit power between the rollers,
+            Poly-V belts are quieter, lighter, cheaper, cleaner, easier to assemble, and require zero ongoing maintenance.
+        </p>
+
+        <p>
+            I designed the system and made fabrication and assembly drawings using SolidWorks. 
+        </p>
+
+
+        <p></p>
+
+        <h3>Outcome</h3>
+
+        <p>
+            The RollerTop 100 product debuted in the Fetch booth at the MODEX trade show in April 2018 and has since gone into production and shipped to customers. I also led the 
+            development of the FetchLink industrial IoT device in parallel to give the RollerTop a way to communicate with existing stationary conveyors in a customers' workflow. 
+        </p>
+
+    </div>
+</div>
