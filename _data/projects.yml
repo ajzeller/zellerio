@@ -15,6 +15,14 @@ hardware_projects:
     color: vocal-focals
     btn_primary: View Live 
     btn_scondary: Details
+  - name: Musical Leds
+    live_url: 
+    details_url: musicaleds
+    image: musicaleds.jpg
+    image-small: musicaleds.jpg
+    color: musicaleds-primary
+    btn_primary: View Video
+    btn_scondary: Details
   - name: NASA Robotic Mining Competition Team
     live_url: http://www.alabamaastrobotics.com/
     details_url: astrobotics

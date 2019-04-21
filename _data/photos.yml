@@ -1,4 +1,28 @@
 photos:
+  - image-file: bernal-1.jpg
+    image-file-large: bernal-1-large.jpg
+  - image-file: chicago-skyline-1.jpg
+    image-file-large: chicago-skyline-1-large.jpg
+  - image-file: chicago-metro-2.jpg
+    image-file-large: chicago-metro-2-large.jpg
+  - image-file: chicago-metro-1.jpg
+    image-file-large: chicago-metro-1-large.jpg
+  - image-file: chicago-puddle-1.jpg
+    image-file-large: chicago-puddle-1-large.jpg
+  - image-file: chicago-skyline-2.jpg
+    image-file-large: chicago-skyline-2-large.jpg
+  - image-file: chicago-pillars.jpg
+    image-file-large: chicago-pillars-large.jpg
+  - image-file: monterey-1.jpg
+    image-file-large: monterey-1-large.jpg
+  - image-file: chicago-bike.jpg
+    image-file-large: chicago-bike-large.jpg
+  - image-file: bixby-bridge.jpg
+    image-file-large: bixby-bridge-large.jpg
+  - image-file: big-sur-2.jpg
+    image-file-large: big-sur-2-large.jpg
+  - image-file: big-sur-1.jpg
+    image-file-large: big-sur-1-large.jpg    
   - image-file: yi_peng_boat.jpg
     image-file-large: yi_peng_boat_large.jpg
   - image-file: bangkok_skyline_day.jpg
@@ -31,6 +55,5 @@ photos:
     image-file-large: pad_thai_tight_large.jpg
   - image-file: street_blur.jpg
     image-file-large: street_blur_large.jpg
-  - image-file: tarn.jpg
-    image-file-large: tarn_large.jpg
+
   
