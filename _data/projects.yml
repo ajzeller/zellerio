@@ -16,7 +16,7 @@ hardware_projects:
     btn_primary: View Live 
     btn_scondary: Details
   - name: Musical Leds
-    live_url: 
+    live_url: https://zeller.io/musicaleds
     details_url: musicaleds
     image: musicaleds.jpg
     image-small: musicaleds.jpg
