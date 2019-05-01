@@ -23,6 +23,14 @@ hardware_projects:
     color: musicaleds-primary
     btn_primary: View Video
     btn_scondary: Details
+  - name: LED Floor Lamp
+    live_url: https://zeller.io/ledlamp
+    details_url: ledlamp
+    image: led_lamp_2.jpg
+    image-small: led_lamp_2.jpg
+    color: musicaleds-primary
+    btn_primary: View Video
+    btn_scondary: Details
   - name: NASA Robotic Mining Competition Team
     live_url: http://www.alabamaastrobotics.com/
     details_url: astrobotics
