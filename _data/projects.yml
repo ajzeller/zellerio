@@ -28,8 +28,8 @@ hardware_projects:
     details_url: ledlamp
     image: led_lamp_2.jpg
     image-small: led_lamp_2.jpg
-    color: musicaleds-primary
-    btn_primary: View Video
+    color: mytop50-black
+    btn_primary: View Site
     btn_scondary: Details
   - name: NASA Robotic Mining Competition Team
     live_url: http://www.alabamaastrobotics.com/
